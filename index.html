@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Battle</title>
+    <style>
+        :root {
+            --grisoscuro: #222730;
+            --grisclaro: #393E46;
+            --azul: #4CAAB3;
+        }
+
+        body {
+            margin: 0;
+            background: var(--grisoscuro)
+        }
+        .wrapper {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contenedor {
+            height: 100%;
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rect {
+            width: 100%;
+            height: 150px;
+            background: var(--azul);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .c1 {
+            display: flex;
+            width: 250px;
+            height: 250px;
+            background: var(--grisoscuro);
+            transform: rotate(45deg);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .c2 {
+            display: flex;
+            width: 150px;
+            height: 150px;
+            background: var(--azul);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ball {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            background: var(--grisclaro);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="contenedor">
+            <div class="rect">
+                <div class="c1">
+                    <div class="c2">
+                        <div class="ball"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
